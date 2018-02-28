@@ -1,0 +1,13 @@
+{
+  "name": "ru.ohrgos",
+  "version": "1.0.1",
+  "displayName": "Охраняется государством",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "^6.2.3"
+  }
+}
