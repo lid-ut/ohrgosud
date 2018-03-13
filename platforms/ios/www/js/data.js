@@ -506,8 +506,19 @@ function readCurrentJournal(_journalId) {
                 for (var i = 0; i < result.rows.length; i++) {
                     journal_background = result.rows.item(i)['journal_picture'];
                     journal_title = result.rows.item(i)['title'];
-                    
-                    $('#parse_load_result_read').append('<div class="j_category">' + result.rows.item(i)['category'] + '</div><div class="curr_journal_post_content" onclick="readJournalFull(' + journalName + ', ' + i + ');"><div class="post_title">' + result.rows.item(i)['posttitle'] + '</div><div class="introtext">' + result.rows.item(i)['introtext'] + '</div><div class="small_bottom"></div></div>');
+                
+                   journal_background = result.rows.item(i)['journal_picture'];
+                   journal_title = result.rows.item(i)['title'];
+                   
+                   var introText = result.rows.item(i)['introtext'];
+                   if(introText.length > 1000)
+                   {
+                   introText = (result.rows.item(i)['introtext']).substring(0, 1000)+ "... " ;
+                   }
+                   
+                       
+                       
+                    $('#parse_load_result_read').append('<div class="j_category">' + result.rows.item(i)['category'] + '</div><div class="curr_journal_post_content" onclick="readJournalFull(' + journalName + ', ' + i + ');"><div class="post_title">' + result.rows.item(i)['posttitle'] + '</div><div class="introtext">' + introText + '</div><div class="small_bottom"></div></div>');
                 }
 
                 $('#new_journal_content_read').append('<img src="images/arrow.png" style="position: absolute; top: 42px; left: 20px; z-index: 100;" onclick="hideReadJournal();" /><div class="new_journal_block_read" style="background-image: url(' + journal_background + ');"><div class="journal_back"><div class="journal_name_read">' + journal_title + '</div></div></div>');
