@@ -3,11 +3,21 @@ body, html{
     padding: 0px;
     background-color: #FFF;
     font-family: samuelPro;
+    
+    
+    width:100%;
 }
 
 *{
     font-family: samuelPro;
+    
 }
+
+.ui-loader{
+    
+    display:none!important;
+}
+
 
 .mobile_main_screen{
     width: 100%;
@@ -141,7 +151,7 @@ body, html{
 }
 
 .journal_block_gray img, .journal_block img{
-    width: 100px; 
+    width: 100px;
     max-width: 100px;
 }
 
@@ -230,7 +240,7 @@ body, html{
 
 .journal_inner_list_container_slider{
     margin-top: 90px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     padding: 20px;
 }
 
@@ -248,7 +258,7 @@ body, html{
 
 .fbp_slide{
     /*display: inline-block;*/
-     /*padding: 20px;*/ 
+    /*padding: 20px;*/
     /* width: 15%; */
     white-space: normal;
 }
@@ -396,7 +406,7 @@ body, html{
 .delbutton{
     display: inline-block;
     /* width: 1%; */
-    color: #FFF; 
+    color: #FFF;
     font-size: 20px;
     /* line-height: 352px; */
     text-align: center;
@@ -429,7 +439,7 @@ body, html{
     -webkit-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
-     
+    
     display: none;
 }
 

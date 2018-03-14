@@ -5,9 +5,13 @@
   "cordova": {
     "platforms": [
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-statusbar": {}
+    }
   },
   "dependencies": {
-    "cordova-android": "^6.2.3"
+    "cordova-android": "^6.2.3",
+    "cordova-plugin-statusbar": "^2.4.1"
   }
 }
